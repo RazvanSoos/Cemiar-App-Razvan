@@ -1,0 +1,134 @@
+@import './base.css';
+
+#app {
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+h1.center-text {
+  margin-bottom: 1rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logout-button {
+  padding: 0.5rem 1rem;
+  background-color: var(--vt-c-indigo);
+  color: var(--vt-c-white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-bottom: 1rem;
+}
+
+.logout-button:hover {
+  background-color: rgba(44, 62, 80, 0.8);
+}
+
+.text-entry-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.textbox {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 2px solid var(--color-border);
+  border-radius: 4px;
+  font-size: 15px;
+  width: 100%;
+  max-width: 400px;
+  word-wrap: break-word;
+  resize: none;
+}
+
+.submit-button {
+  padding: 0.5rem 1rem;
+  background-color: var(--vt-c-indigo);
+  color: var(--vt-c-white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.submit-button:hover {
+  background-color: rgba(44, 62, 80, 0.8);
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 400px;
+}
+
+.comment {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 2px solid var(--color-border);
+  border-radius: 4px;
+  width: 100%;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.comment-name {
+  font-weight: bold;
+}
+
+.comment-date {
+  font-size: 12px;
+  color: #888;
+}
+
+.comment-content {
+  text-align: justify;
+}
