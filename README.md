@@ -7,27 +7,32 @@ To run locally, make sure you have mondodb installed and running. I recommend it
 In visual studio code open two terminals and run the following commands
 
 First one: 
+```
 cd server
 node index.js
-
+```
 Second one:
+```
 cd vue-project
 npm run dev
-
+```
 The server should return:
+```
 Connected to MongoDB
 Server running on http://localhost:3000
+```
 
 The vue app should return:
-> vue-project@0.0.0 dev
-> vite
+```
+vue-project@0.0.0 dev
+vite
 
   VITE v4.4.7  ready in 1066 ms
 
   ➜  Local:   http://localhost:5173/
   ➜  Network: use --host to expose
   ➜  press h to show help
-
+```
 
 Vite will connect to your IP :5173, make sure that you go on localhost:5173 instead as the google connection is not configured to support other IPs.
 
