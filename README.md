@@ -16,6 +16,8 @@ Second one:
 cd vue-project
 npm run dev
 ```
+The first time you set things up, run `npm install` after going into the folders
+
 The server should return:
 ```
 Connected to MongoDB
